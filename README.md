@@ -20,7 +20,7 @@ https://ayaelrhayour.github.io/MUCEM/
 
 _Client:_ HTML, CSS, js
 
-Server:_ PHP, SQL, MySql
+Server: PHP, SQL, MySql
 
 ## Author
 

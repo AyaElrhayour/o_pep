@@ -47,9 +47,13 @@ clientLogout();
 function orderItems()
 {
   if (isset($_POST["order"])) {
-    order();
+    if(order()) {
+      header("Location: home.php");
+    }
   } else if (isset($_POST["clear"])) {
-    deleteAllPlantsInCart();
+    if(deleteAllPlantsInCart()) {
+      header("Location: home.php");
+    }
   }
 }
 
@@ -112,9 +116,7 @@ orderItems();
           </li>
         </ul>
 
-        <div class="nav__close" id="nav-close">
-          <i class="ri-close-line"></i>
-        </div>
+
       </div>
     </nav>
     <div class="popup-container">
