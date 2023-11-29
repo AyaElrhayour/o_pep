@@ -1,8 +1,8 @@
 <?php
-session_start();
-if(isset($_SESSION["logged"]) && $_SESSION["logged"] && isset($_SESSION["role_id"]) && $_SESSION["role_id"] == 1) {
-  header("Location: home.php");
-}
+// session_start();
+// if(isset($_SESSION["logged"]) && $_SESSION["logged"] && isset($_SESSION["role_id"]) && $_SESSION["role_id"] == 1) {
+//   header("Location:home.php");
+// }
 require_once('./app/config/db.php');
 require_once("./app/funcs/category.php");
 require_once('./app/funcs/plant.php');
@@ -283,7 +283,7 @@ adminLogout();
                 <tr>
                   <td><img style="width: 50px;" src="./assets/imgs/<?php echo $plant["plant_img"]; ?>" alt=""></td>
                   <td><?php echo $plant["plant_name"]; ?></td>
-                  <td><?php echo $plant["plant_price"]; ?></td>
+                  <td><?php echo $plant["plant_price"]; ?>$</td>
                   <td><?php echo $plant["category_name"]; ?></td>
                   <td>
                     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">

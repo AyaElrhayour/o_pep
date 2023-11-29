@@ -153,9 +153,9 @@ let closeCart = document.querySelector('.cart-close');
 let list = document.querySelector('.cartItemsList');
 let body = document.querySelector('body');
 
-// openCart.addEventListener('click', ()=>{
-//     body.classList.add('active');
-// })
-// closeCart.addEventListener('click' , ()=>{
-//     body.classList.remove('active');
-// })
+openCart.addEventListener('click', ()=>{
+    body.classList.add('active');
+})
+closeCart.addEventListener('click' , ()=>{
+    body.classList.remove('active');
+})
